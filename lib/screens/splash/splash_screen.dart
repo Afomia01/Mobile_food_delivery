@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:food_prime_app/screens/main/main_screen.dart';
 import 'package:food_prime_app/theme/style.dart';
 
 class SplashScreen extends StatefulWidget {
