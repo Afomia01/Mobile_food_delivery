@@ -52,7 +52,7 @@ class PaymentScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Image.asset("assets/master_card.png"),
+                      child: Image.asset("assets/cbe.jfif"),
                     ),
                   ),
                 ),
@@ -69,7 +69,7 @@ class PaymentScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Image.asset("assets/visa.png"),
+                      child: Image.asset("assets/telebirr.jfif"),
                     ),
                   ),
                 ),
@@ -86,7 +86,7 @@ class PaymentScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
-                      child: Image.asset("assets/paypal.png"),
+                      child: Image.asset("assets/mpesa.png"),
                     ),
                   ),
                 ),

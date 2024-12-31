@@ -27,11 +27,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           margin: const EdgeInsets.symmetric(vertical: 80),
           child: Column(
             children: [
-              Image.asset("assets/word_app_logo.png"),
+              //Image.asset("assets/word_app_logo.png"),
               const SizedBox(
                 height: 130,
               ),
-              Image.asset("assets/${onBoardingData[index].image}"),
+              //Image.asset("assets/${onBoardingData[index].image}"),
               const SizedBox(
                 height: 40,
               ),
