@@ -1,14 +1,25 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_prime_app/firebase_options.dart';
 import 'package:food_prime_app/screens/onboarding/onboarding_screen.dart';
 import 'package:food_prime_app/screens/splash/splash_screen.dart';
-import 'package:provider/provider.dart'; 
+import 'package:provider/provider.dart';
 import 'package:food_prime_app/providers/cart_provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+   await Firebase.initializeApp(
+   options: DefaultFirebaseOptions.currentPlatform,
+ );// 
+  } catch (e) {
+    print("Firebase Initialization Error: $e"); 
+  }
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => CartProvider()), // Register cart provider
+        ChangeNotifierProvider(
+            create: (_) => CartProvider()), // Register cart provider
       ],
       child: const MyApp(),
     ),
@@ -36,12 +47,11 @@ class MyApp extends StatelessWidget {
       },
     );
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Food Prime",
-      theme: ThemeData(
-        primarySwatch: primarySwatch,
-      ),
-      home: const SplashScreen(child: OnBoardingScreen())
-    );
+        debugShowCheckedModeBanner: false,
+        title: "MEAD Delivery",
+        theme: ThemeData(
+          primarySwatch: primarySwatch,
+        ),
+        home: const SplashScreen(child: OnBoardingScreen()));
   }
 }

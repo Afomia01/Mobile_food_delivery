@@ -32,6 +32,10 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.4
   font_awesome_flutter: ^10.5.0
+  firebase_core: ^2.27.2  # ✅ Correct version (3.x does not exist)
+  firebase_storage: ^11.6.7  # ✅ Compatible version
+  firebase_auth: ^4.17.7  # ✅ Compatible version
+  cloud_firestore: ^4.15.7  # ✅ Compatible version
 
 
   # The following adds the Cupertino Icons font to your application.

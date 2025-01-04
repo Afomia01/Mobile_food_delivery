@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "711425644216",
+    "project_id": "maed-delivery-3f3c6",
+    "storage_bucket": "maed-delivery-3f3c6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711425644216:android:04e51cca4b652fbe33064d",
+        "android_client_info": {
+          "package_name": "com.example.food_prime_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfKNzg1gKVfcyFjLv1cj2k_2yU2_bJWbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

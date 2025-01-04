@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:food_prime_app/theme/style.dart';
 
@@ -12,10 +10,17 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: whiteColor,
         centerTitle: true,
-        title: Image.asset("assets/word_app_logo.png"),
+        title: Text("MEAD Delivery"),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings, color: Colors.black,)),
-          const SizedBox(width: 10,),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.settings,
+                color: Colors.black,
+              )),
+          const SizedBox(
+            width: 10,
+          ),
         ],
       ),
       body: Container(
@@ -24,34 +29,40 @@ class ProfilePage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset("assets/user_profile.png"),
-                const SizedBox(width: 10,),
-                const Text("John Smith", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
+                Image.asset("assets/Profile.png"),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Text(
+                  "Abebe Bekele",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                )
               ],
             ),
-            const SizedBox(height: 10,),
+            const SizedBox(
+              height: 10,
+            ),
             Container(
               width: double.infinity,
               height: 1,
               color: Colors.grey[400],
             ),
-            const SizedBox(height: 20,),
-            _settingsItem(
-              title: "Language",
-              prefixIcon: Icons.language
+            const SizedBox(
+              height: 20,
             ),
-            const SizedBox(height: 15,),
-            _settingsItem(
-                title: "Help",
-                prefixIcon: Icons.help
+            _settingsItem(title: "Language", prefixIcon: Icons.language),
+            const SizedBox(
+              height: 15,
             ),
-            const SizedBox(height: 15,),
-            _settingsItem(
-                title: "Theme",
-                prefixIcon: Icons.light_mode_outlined
+            _settingsItem(title: "Help", prefixIcon: Icons.help),
+            const SizedBox(
+              height: 15,
             ),
-            const SizedBox(height: 15,),
-
+            _settingsItem(
+                title: "Theme", prefixIcon: Icons.light_mode_outlined),
+            const SizedBox(
+              height: 15,
+            ),
           ],
         ),
       ),
@@ -64,17 +75,23 @@ class ProfilePage extends StatelessWidget {
       height: 50,
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
-          color: lightGreyColor,
-          borderRadius: BorderRadius.circular(10)
-      ),
+          color: lightGreyColor, borderRadius: BorderRadius.circular(10)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
-              Icon(prefixIcon, size: 30,),
-              const SizedBox(width: 10,),
-              Text("$title", style: const TextStyle(fontSize: 16),)
+              Icon(
+                prefixIcon,
+                size: 30,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Text(
+                "$title",
+                style: const TextStyle(fontSize: 16),
+              )
             ],
           ),
           const Icon(Icons.arrow_forward_ios)
