@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:food_prime_app/screens/onboarding/onboarding_screen.dart';
 import 'package:food_prime_app/screens/splash/splash_screen.dart';
+import 'package:provider/provider.dart'; 
+import 'package:food_prime_app/providers/cart_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider()), // Register cart provider
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
